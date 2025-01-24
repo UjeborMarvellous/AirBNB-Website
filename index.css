@@ -246,9 +246,7 @@ body {
 .Context .sub {
     font-size: 1rem;
     font-weight: 700;
-    /* margin: 10px 0; */
     color: #eee9e3;
-    /* font-family: "Open Sans", "Cinzel", serif; */
 
 }
 
@@ -258,9 +256,9 @@ body {
 }
 
 .bg {
-    padding: 20% 11%;
+    padding: 9% 5%;
     height: 36dvh;
-    border-radius: 20px;
+    border-radius: 30px;
     background: #000000b4;
 }
 
@@ -273,12 +271,13 @@ p.badges span {
 }
 
 p.content {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
+    width: 28%;
 }
 
 .content .cta a {
-    background-color: #501506de;
+    background-color: #411c13be;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -544,7 +543,7 @@ p.Home {
     position: absolute;
     top: 0;
     z-index: 10;
-    margin-top: min(38.6%, 45%);
+    margin-top: min(36.6%, 45%);
     padding: clamp(10px, 2vw, 15px);
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     font-weight: 600;
@@ -556,13 +555,13 @@ p.Home {
 
 .span {
     border: 2px solid rgba(0, 0, 0, 0.705);
-    padding: 3px 5px;
+    padding: .3rem 2rem;
     border-radius: 20px;
-    font-size: .5rem;
+    font-size: 1.2rem;
 }
 
 .modern-left .title {
-    margin-top: min(42%, 48%);
+    margin-top: min(40%, 48%);
     position: absolute;
     background: #efeeea;
     color: rgba(0, 0, 0, 0.705);
@@ -570,15 +569,15 @@ p.Home {
     border-top-right-radius: 30px;
     top: 0;
     font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 520;
 }
 
 .modern-left .titles {
-    margin-top: min(48%, 60%);
+    margin-top: min(47%, 60%);
     position: absolute;
     background: #efeeea;
     color: rgba(0, 0, 0, 0.705);
-    padding: clamp(10px, 2vw, 15px) clamp(3rem, 6vw, 7rem) clamp(15px, 2vw, 20px) clamp(15px, 3vw, 30px);
+    padding: clamp(10px, 2vw, 15px) clamp(3rem, 6vw, 7rem) clamp(27px, 2vw, 20px) clamp(15px, 3vw, 30px);
     border-top-right-radius: 30px;
     top: 0;
     font-size: clamp(2rem, 4vw, 3.5rem);
@@ -608,8 +607,9 @@ p.Home {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: url('./Images/Room.jpg') no-repeat center center/cover;
+    background: url('./Images/Jesi01.jpeg') no-repeat center center/cover;
     height: 38dvh;
+    object-fit: contain;
 }
 
 /* Responsive adjustments */
@@ -828,11 +828,16 @@ p.Home {
 }
 
 .subT {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 1.2;
+    margin-top: 10%;
     margin-bottom: 10px;
     color: rgba(0, 0, 0, 0.705);
+}
+
+.Text{
+    margin-top: 10%;
 }
 
 .btn {
@@ -1118,8 +1123,7 @@ p.Home {
 
 .title {
     color: white;
-    font-family: sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     z-index: 2;
 }
 
@@ -1235,7 +1239,6 @@ p.Home {
 
     .title {
         color: white;
-        font-family: sans-serif;
         font-size: 14px;
         z-index: 2;
     }
@@ -1352,7 +1355,6 @@ p.Home {
 
     .title {
         color: white;
-        font-family: sans-serif;
         font-size: 12px;
         z-index: 2;
     }
