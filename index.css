@@ -1,11 +1,12 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     background: rgba(240, 238, 235, 0.966);
-    font-family: "Nunito", serif;
+    font-family: "Open Sans", serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
     font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .navbar {
@@ -147,6 +148,19 @@ body {
     border-radius: 20px;
 }
 
+.bgs{
+    background: #0000006e;
+    height: 77.9dvh;
+    padding: 2%;
+    border-radius: 20px;
+    width: 99%;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+}
+
 .content h1 {
     font-size: 10rem;
     font-weight: bold;
@@ -177,8 +191,9 @@ body {
 
 .Context .sub {
     font-size: 1.1rem;
+    font-weight: 700;
     /* margin: 10px 0; */
-    color: rgba(53, 48, 48, 0.705);
+    color: rgba(34, 32, 32, 0.705);
 
 }
 
@@ -243,9 +258,19 @@ p.content {
         margin-top: 1em;
     }
 
+    .bgs{
+        background: #0000006e;
+        height: 52dvh;
+        padding: 2%;
+        border-radius: 20px;
+        width: 99%;
+        position: relative;
+    }
+
     .Context .sub {
         color: rgba(19, 17, 17, 0.705);
         width: 100%;
+        font-weight: 700;
     }
 
     .Context {
@@ -327,11 +352,21 @@ p.content {
         margin-top: 1em;
     }
 
+    .bgs{
+        background: #0000006e;
+        height: 52dvh;
+        padding: 2%;
+        border-radius: 20px;
+        width: 99%;
+        position: relative;
+    }
+
     .Context .sub {
         font-size: .6rem;
         /* margin: 10px 0; */
         color: rgba(53, 48, 48, 0.705);
         width: 100%;
+        
     }
 
     .Context {
@@ -877,7 +912,7 @@ p.Home {
 /* Amenities section start */
 .Amenities {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     text-align: center;
     padding: 2% 10%;
@@ -897,12 +932,13 @@ p.Home {
 .titles {
     text-align: center;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 @media (max-width: 968px) {
     .Amenities {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 20px;
         text-align: center;
         padding: 2% 10%;
@@ -929,7 +965,7 @@ p.Home {
 @media (max-width: 480px) {
     .Amenities {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 20px;
         text-align: center;
         padding: 2% 10%;

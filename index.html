@@ -9,9 +9,21 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("z8UedMwcTkCM6MqMk");
+      })();
+    </script>
   </head>
   <body>
     <div class="container">
@@ -34,6 +46,7 @@
       </nav>
       <div class="LandingPage">
         <div class="section">
+          <div class="bgs"></div>
           <div class="content">
             <h1>Suite Rosso 24 JESI</h1>
             <p class="subText">
@@ -114,56 +127,57 @@
       <div class="Amenities">
         <div class="Wifi">
           <i class="bx bx-wifi"></i>
-          <p class="titles">
-            High Speed <br />
-            Internet Connection
-          </p>
+          <p class="titles">High-Speed Internet</p>
         </div>
         <div class="Water">
           <i class="bx bxs-shower"></i>
-          <p class="titles">Regulated Water</p>
+          <p class="titles">Fully Equipped Toilet</p>
         </div>
         <div class="spacious">
           <i class="bx bxs-florist"></i>
-          <p class="titles">Spacious Outdoor Space</p>
+          <p class="titles">Front Public Park</p>
         </div>
         <div class="Comfort">
           <i class="bx bx-bed"></i>
-          <p class="titles">Comfortable Rooms</p>
+          <p class="titles">Comfortable Room</p>
+        </div>
+        <div class="Comfort">
+          <i class="bx bxs-car"></i>
+          <p class="titles">Full Front Parking</p>
         </div>
       </div>
       <div class="Form" id="ContactUs">
         <div class="ContactUss">
           <h1 class="Contacts">Contact Us</h1>
         </div>
-        <form>
+        <form onsubmit="sendEmail(event)">
           <div class="form-grids">
             <h1>Book Now!</h1>
             <div class="form-grid">
               <div class="form-group">
-                <label>First Name</label>
-                <input type="text" required />
+                <label>Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
               </div>
               <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" required />
+                <label>Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required />
               </div>
               <div class="form-group">
                 <label>Email Address</label>
-                <input type="email" required />
+                <input type="email" id="email" name="email" required />
               </div>
               <div class="form-group">
                 <label>Date and Time Of Arrival</label>
-                <input type="datetime-local" required />
+                <input type="datetime-local" id="dateAndTime" name="dateAndTime" required />
               </div>
               <div class="form-group full-width">
-                <label>Write your message</label>
-                <textarea required></textarea>
+                <label>Write your preferences </label>
+                <textarea required id="message" name="message"></textarea>
               </div>
               <button type="submit" class="button">SUBMIT</button>
             </div>
           </div>
-        </form>
+        </form>        
         <div class="ContactUs">
           <h1 class="Contact">Contact Us</h1>
           <div class="group">
@@ -171,7 +185,10 @@
               <p>call us on : <a href="tel:+393756052452">+393756052452</a></p>
             </div>
             <div class="phoneNumber">
-              <p>Email us @ : <a href="mailto:suite24jesi@gmail.com">suite24jesi@gmail.com</a></p>
+              <p>
+                Email us @ :
+                <a href="mailto:suite24jesi@gmail.com">suite24jesi@gmail.com</a>
+              </p>
             </div>
           </div>
           <div class="address">
@@ -197,49 +214,55 @@
             <img src="./Images/Image01.png" alt="Mondrian" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Ruby Haven</div>
+              <div class="title">Our Cozzy Bedroom</div>
             </div>
           </div>
           <div class="grid-item nirnia-main" data-index="1">
             <img src="./Images/Image06.jpg" alt="Nirnia" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Historic Buildings with Church Towers</div>
+              <div class="title">
+                Walk Distance from the historical city center
+              </div>
             </div>
           </div>
           <div class="grid-item artex" data-index="2">
             <img src="./Images/Image04.jpg" alt="Artex" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Azure Coast</div>
+              <div class="title">Visit the amazing Conero Coast Nearby</div>
             </div>
           </div>
           <div class="grid-item brera" data-index="3">
             <img src="./Images/Image02.jpg" alt="Brera" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Urban Mordern Bath</div>
+              <div class="title">Fully equipped and Warm Toilet</div>
             </div>
           </div>
           <div class="grid-item alea-pro" data-index="4">
             <img src="./Images/Image05.jpeg" alt="Alea Pro" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Forest Lakes Vista</div>
+              <div class="title">
+                Cingoli Lake Area, for stunning culinary sight
+              </div>
             </div>
           </div>
           <div class="grid-item nirnia-secondary" data-index="5">
             <img src="./Images/Image03.jpg" alt="Nirnia" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Well Fashion Wooden FLoring</div>
+              <div class="title">
+                Fully Furnished for Family holiday and remote working
+              </div>
             </div>
           </div>
           <div class="grid-item nirnia-secondary" data-index="5">
             <img src="./Images/Jesi.jpg" alt="Nirnia" />
             <div class="overlay">
               <div class="arrow">↗</div>
-              <div class="title">Street View Historical Tower</div>
+              <div class="title">Tour Jesi exploring Le Marche Surrounding</div>
             </div>
           </div>
         </div>

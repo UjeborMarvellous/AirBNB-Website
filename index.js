@@ -1,14 +1,28 @@
 // This section is for the toogle on mobile screen Navbar
 const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
+const menu = document.querySelector('.menu');
 
-    menuToggle.addEventListener('click', () => {
-        if (menu.style.display === 'none' || menu.style.display === '') {
-            menu.style.display = 'flex';
-        } else {
-            menu.style.display = 'none';
-        }
-    });
+// Set initial state based on screen size
+function updateMenuVisibility() {
+    if (window.innerWidth > 768) { // desktop breakpoint
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
+    }
+}
+
+// Handle menu toggle click
+menuToggle.addEventListener('click', () => {
+    if (window.innerWidth <= 768) { // Only toggle on mobile
+        menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
+    }
+});
+
+// Update on window resize
+window.addEventListener('resize', updateMenuVisibility);
+
+// Set initial state
+updateMenuVisibility();
 
 // This function is for the google translator section
     function googleTranslateElementInit() {
@@ -78,3 +92,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Email Js section
+function sendEmail(event) {
+    // Prevent the form from submitting normally
+    event.preventDefault();
+  
+    // Collect form data
+    const params = {
+      fullName: document.getElementById("fullName").value,
+      phoneNumber: document.getElementById("phoneNumber").value,
+      email: document.getElementById("email").value,
+      dateAndTime: document.getElementById("dateAndTime").value,
+      message: document.getElementById("message").value,
+    };
+  
+    // Send the email
+    emailjs
+      .send("service_t4qc2lk", "template_g5as9pr", params)
+      .then(() => {
+        alert("Thank you for making a reservation!");
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        alert("Failed to send email. Please try again.");
+      });
+  }
