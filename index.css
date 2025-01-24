@@ -489,7 +489,7 @@ p.Home {
     position: absolute;
     top: 0;
     z-index: 10;
-    margin-top: min(36%, 45%);
+    margin-top: min(38.6%, 45%);
     padding: clamp(10px, 2vw, 15px);
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     font-weight: 600;
@@ -507,7 +507,7 @@ p.Home {
 }
 
 .modern-left .title {
-    margin-top: min(40%, 48%);
+    margin-top: min(42%, 48%);
     position: absolute;
     background: #efeeea;
     color: rgba(0, 0, 0, 0.705);
