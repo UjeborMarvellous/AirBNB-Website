@@ -672,11 +672,11 @@ p.Home {
         border: 2px solid rgba(0, 0, 0, 0.705);
         padding: 3px 5px;
         border-radius: 20px;
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     .modern-left .title {
-        margin-top: min(26%, 48%);
+        margin-top: min(27%, 48%);
         position: absolute;
         background: #efeeea;
         color: rgba(0, 0, 0, 0.705);
@@ -688,7 +688,7 @@ p.Home {
     }
 
     .modern-left .titles {
-        margin-top: min(32%, 60%);
+        margin-top: min(34%, 60%);
         position: absolute;
         background: #efeeea;
         color: rgba(0, 0, 0, 0.705);
@@ -700,7 +700,7 @@ p.Home {
     }
 
     .bg {
-        padding: 10%;
+        padding: 6% 4%;
         height: 36dvh;
         border-radius: 20px;
         background: #000000b4;
@@ -715,8 +715,10 @@ p.Home {
     }
 
     p.content {
-        font-size: 2rem;
+        font-size: 1.2rem;
         color: #fff;
+        width: 80%;
+        padding: 1% 2%;
     }
 }
 
@@ -724,6 +726,12 @@ p.Home {
 @media (max-width: 480px) {
     .modern-left img {
         height: 40dvh;
+    }
+
+    p.contents {
+        font-size: clamp(0.875rem, 2vw, .9rem);
+        margin-top: -1%;
+        margin-left: 2px;
     }
 
     .modern-right {
@@ -742,23 +750,25 @@ p.Home {
     }
 
     .modern-cards {
-        height: 25dvh;
+        height: 35dvh;
     }
 
     .modern-left .title {
-        margin-top: 56%;
+        margin-top: 59%;
         padding-right: 4rem;
         padding-left: 4%;
+        font-size: 1.1rem;
     }
 
     .modern-left .titles {
-        margin-top: 70%;
+        margin-top: 69%;
+        font-size: 1.2rem;
         padding-right: 5rem;
         padding-left: 4%;
     }
 
     .modern-left .badge {
-        margin-top: 47.4%;
+        margin-top: 50.4%;
         padding-left: 3%;
     }
 
@@ -780,6 +790,7 @@ p.Home {
     p.content {
         font-size: .8rem;
         color: #fff;
+        width: 83%;
     }
 
     p.Home {
@@ -867,6 +878,7 @@ p.Home {
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: 800;
+        margin-bottom: -15%;
         color: rgba(0, 0, 0, 0.705);
     }
 
@@ -898,7 +910,7 @@ p.Home {
     }
 
     .subT {
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 900;
         line-height: 1.2;
         margin-bottom: 10px;
@@ -929,6 +941,7 @@ p.Home {
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 800;
+        margin-bottom: -15%;
         color: rgba(0, 0, 0, 0.705);
     }
 
@@ -961,7 +974,7 @@ p.Home {
     }
 
     .subT {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 900;
         line-height: 1.2;
         margin-bottom: 10px;
@@ -971,9 +984,9 @@ p.Home {
     .btn {
         background-color: #5a342bbe;
         color: #f7f4f0;
-        font-size: .8rem;
+        font-size: .6rem;
         font-weight: 800;
-        padding: .8rem 1.3rem;
+        padding: .5rem 1.3rem;
         border: none;
         outline: none;
         border-radius: 30px;
