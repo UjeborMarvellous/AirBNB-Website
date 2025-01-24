@@ -111,7 +111,9 @@ function sendEmail(event) {
     emailjs
       .send("service_t4qc2lk", "template_g5as9pr", params)
       .then(() => {
-        alert("Thank you for making a reservation!");
+        alert("Thank you for your request, we will answer soon!");
+
+        document.getElementById("reservationForm").reset();
       })
       .catch((error) => {
         console.error("Failed to send email:", error);
