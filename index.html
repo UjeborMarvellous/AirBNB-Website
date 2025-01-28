@@ -79,15 +79,19 @@
         <div class="modern-section">
           <div class="modern-left">
             <img src="./Images/InHouse.jpg" alt="Modern Minimalist" />
-            <div class="texts">
-              <p class="badge"><span class="span">Federico II di Svevia</span></p>
+            <!-- <div class="texts">
+              <p class="badge">
+                <span class="span">Federico II di Svevia</span>
+              </p>
               <p class="title">Those who have</p>
               <p class="titles">Strength follow their path</p>
-            </div>
+            </div> -->
           </div>
           <div class="modern-right">
             <div class="modern-card">
-              <p class="badge"><span>A Comfortable and Functional Space</span></p>
+              <p class="badge">
+                <span>A Comfortable and Functional Space</span>
+              </p>
               <p class="contents">
                 The living room is designed for both relaxation and
                 practicality. It features a cozy sofa for unwinding, a dedicated
@@ -173,11 +177,18 @@
             <div class="form-grid">
               <div class="form-group">
                 <label>Full Name</label>
-                <input type="text" id="fullName" name="fullName" required />
+                <input
+                  class="InputValue"
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label>Phone Number</label>
                 <input
+                  class="InputValue"
                   type="text"
                   id="phoneNumber"
                   name="phoneNumber"
@@ -186,11 +197,18 @@
               </div>
               <div class="form-group">
                 <label>Email Address</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  class="InputValue"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label>Date and Time Of Arrival</label>
                 <input
+                  class="InputValue"
                   type="datetime-local"
                   id="dateAndTime"
                   name="dateAndTime"
@@ -204,6 +222,7 @@
                   height="20"
                   id="message"
                   name="message"
+                  class="InputValue"
                 ></textarea>
               </div>
               <button type="submit" class="button">SUBMIT</button>

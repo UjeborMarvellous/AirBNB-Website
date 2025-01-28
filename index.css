@@ -1531,7 +1531,9 @@ form {
     }
 }
 
-
+.InputValue{
+    font-size: 1rem;
+}
 
 .form-grid {
     display: grid;
