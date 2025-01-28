@@ -120,3 +120,28 @@ function sendEmail(event) {
         alert("Failed to send email. Please try again.");
       });
   }
+
+
+  // Function to set the minimum date and time to the current date and time
+  function setMinDateTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+
+    const minDateTime = `${year}-${month}-${day}T${hours}:${minutes}`;
+
+    // Set the min attribute for the datetime-local input
+    document.getElementById('dateAndTime').min = minDateTime;
+}
+
+// Call the function when the page loads
+setMinDateTime();
+
+// Function to handle form submission (you can replace this with your actual logic)
+function sendEmail(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    alert("Form submitted successfully!"); // Replace with your logic
+}
