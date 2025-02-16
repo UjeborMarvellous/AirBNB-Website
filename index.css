@@ -345,7 +345,7 @@ p.content {
         position: relative;
         width: 95%;
         height: 55vh;
-        background: url('./Images/Image01.jpg') no-repeat center center/cover;
+        background: url('./Images/Image01.png') no-repeat center center/cover;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -448,7 +448,7 @@ p.content {
         position: relative;
         width: 95%;
         height: 54vh;
-        background: url('./Images/Image01.jpg') no-repeat center center/cover;
+        background: url('./Images/Image01.png') no-repeat center center/cover;
         display: flex;
         align-items: center;
         justify-content: center;
